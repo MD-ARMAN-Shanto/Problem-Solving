@@ -9,7 +9,7 @@ def player_stat_fucntion(player_list, runs, wickets, catches):
     return player_stat
 
 
-# solution 2 using zip make
+# solution 2 using zip make automatic list of tuple
 def player(player_list, runs, wickets, catches):
 
     player_stat = list(zip(player_list, runs, wickets, catches))
