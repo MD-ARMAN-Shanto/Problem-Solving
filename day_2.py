@@ -54,7 +54,7 @@ if __name__ == '__main__':
     print(factors)
 
 
-take input number as a list
+# take input number as a list
 
 x = list(map(int, input().split()))
 print(x)
