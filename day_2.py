@@ -52,3 +52,25 @@ if __name__ == '__main__':
     factors = prime_divisible_value(number)
     assert expected_ans == factors, factors
     print(factors)
+
+
+take input number as a list
+
+x = list(map(int, input().split()))
+print(x)
+
+
+def even_number(n):
+    return n % 2 == 0
+
+
+# # using filter
+# even_list = filter(even_number, x)
+# print('list printed', list(even_list))
+
+# using lambda function
+even_list_1 = filter(lambda y: y % 2 == 0, x)
+print(list(even_list_1))
+
+x = "arman shanto"
+print(x.title())
