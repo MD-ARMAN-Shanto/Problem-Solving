@@ -23,6 +23,7 @@ def score_records(score_list):
     return [highest_score_count, lowest_score_count]
 
 
+# test cases added for function check
 if __name__ == '__main__':
     score_list = [2, 4, 6, 1, 8, 10]
     expected_ans = [4, 1]
