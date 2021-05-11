@@ -28,3 +28,16 @@ if __name__ == '__main__':
     final_result = removeDuplicatesFromSortedArray(nums)
     assert expected_ans == final_result, final_result
     print(final_result)
+
+
+def removeElement(nums: List[int], val: int) -> int:
+    y = nums.count(val)
+    for i in range(y):
+        nums.remove(val)
+    return len(nums)
+
+
+nums = [1, 1, 2, 3, 4]
+val = 1
+final_result = removeElement(nums, val)
+print(final_result)
