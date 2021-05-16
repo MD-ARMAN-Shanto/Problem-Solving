@@ -79,4 +79,4 @@ if __name__ == '__main__':
     assert freq_num[7] == 4
     assert freq_num[9] == 2
     assert freq_num[11] == 3
-    assert freq_num[12] == 0
+
