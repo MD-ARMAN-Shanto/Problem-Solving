@@ -12,6 +12,7 @@ def plusOne(digits: List[int]) -> List[int]:
         return [int(k) for k in str(number)]
 
 
+# test cases
 if __name__ == '__main__':
     digits = [1, 2, 3]
     final_result = plusOne(digits)
