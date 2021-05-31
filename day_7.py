@@ -1,5 +1,7 @@
 # Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.
 from typing import List
+
+
 def plusOne(digits: List[int]) -> List[int]:
 
     if len(digits) == 0:
@@ -35,7 +37,7 @@ if __name__ == '__main__':
 
     digits = [9]
     final_result = plusOne(digits)
-    expected_result = [1, 0]
+    expected_result = [1,0]
     assert expected_result == final_result, final_result
     print(final_result)
 
