@@ -1,5 +1,5 @@
 # binary search algorithm
-# time complexity O(nlogn) and space complexity )(n)
+# time complexity O(logn) and space complexity )(n)
 
 from typing import List
 
