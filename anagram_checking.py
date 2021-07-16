@@ -45,7 +45,7 @@ if __name__ == '__main__':
 # solution 2 count and compare with time complexity O(n)
 
 def anagram_checking(s1, s2):
-    #take counter for counting letters
+    # take 26 size array counter for counting letters with 0
     c1 = [0] * 26
     c2 = [0] * 26
 
