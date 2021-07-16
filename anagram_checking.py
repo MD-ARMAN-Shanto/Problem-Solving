@@ -42,6 +42,51 @@ if __name__ == '__main__':
     print(func_call)
 
 
+# solution 2 count and compare with time complexity O(n)
+
+def anagram_checking(s1, s2):
+    #take counter for counting letters
+    c1 = [0] * 26
+    c2 = [0] * 26
+
+    for i in range(len(s1)):
+        pos = ord(s1[i]) - ord('a')
+        c1[pos] = c1[pos] + 1
+
+    for i in range(len(s2)):
+        pos = ord(s2[i]) - ord('a')
+        c2[pos] = c2[pos] + 1
+
+    j = 0
+    stillOk = True
+
+    while j < 26 and stillOk:
+        if c1[j] == c2[j]:
+            j += 1
+        else:
+            stillOk = False
+
+    return stillOk
+
+
+if __name__ == '__main__':
+    s1, s2 = 'heart', 'earth'
+    func_call = anagram_checking(s1,s2)
+    expected_result = True
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    s1, s2 = 'python', 'typhon'
+    func_call = anagram_checking(s1, s2)
+    expected_result = True
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    s1, s2 = 'arman', 'german'
+    func_call = anagram_checking(s1, s2)
+    expected_result = False
+    assert expected_result == func_call, func_call
+    print(func_call)
 
 
 
