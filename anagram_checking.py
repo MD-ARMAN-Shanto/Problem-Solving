@@ -1,4 +1,4 @@
-# solution1 sort and compare with time complexity O(n^2)
+# solution1 sort and compare with time complexity O(nlogn) + O(nlogn) + O(n) = O(nlogn) and space complexity O(1)
 
 def anagram_checking(s1: str, s2: str) -> bool:
 
@@ -6,7 +6,7 @@ def anagram_checking(s1: str, s2: str) -> bool:
     a1List = list(s1)
     a2List = list(s2)
 
-    # sort the list ascending
+    # sort the list ascending time complexity O(nlogn)
     a1List.sort()
     a2List.sort()
 
@@ -14,6 +14,7 @@ def anagram_checking(s1: str, s2: str) -> bool:
     pos = 0
     matches = True
 
+    # time complexity O(n)
     while pos < len(s1) and matches:
         if a1List[pos] == a2List[pos]:
             pos += 1
@@ -42,7 +43,7 @@ if __name__ == '__main__':
     print(func_call)
 
 
-# solution 2 count and compare with time complexity O(n)
+# solution 2 count and compare with time complexity O(n) + O(n) + O(n) = O(n) and space complexity O(1)
 
 def anagram_checking(s1, s2):
     # take 26 size array counter for counting letters with 0
@@ -87,6 +88,4 @@ if __name__ == '__main__':
     expected_result = False
     assert expected_result == func_call, func_call
     print(func_call)
-
-
 
