@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
 # two pointer approach
 
-# Todo
+#Todo
 # step 1: first sort the given array
 # step 2: take start and end(upto it's length) position from the array
 # step 3: take a while loop until start < end
