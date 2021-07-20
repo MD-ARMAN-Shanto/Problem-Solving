@@ -7,12 +7,12 @@ from typing import List
 
 
 def two_sum(arr: List[int], target: int) -> List[int]:
-
     for i in range(len(arr)):
         for j in range(len(arr)):
             if arr[i] + arr[j] == target:
                 return [arr[i], arr[j]]
     return []
+
 
 # time complexity O(n * n) = O(n^2)
 # space complexity O(1)
@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
 # two pointer approach
 
-#Todo
+# Todo
 # step 1: first sort the given array
 # step 2: take start and end(upto it's length) position from the array
 # step 3: take a while loop until start < end
@@ -50,7 +50,6 @@ if __name__ == '__main__':
 # step 5: if sum > target then end -+ 1 else sum < target then  start +=1
 
 def two_sum_pointer(arr: List[int], target: int) -> List[int]:
-
     arr.sort()  # O(nlogn)
     start = 0
     end = len(arr) - 1
@@ -65,6 +64,7 @@ def two_sum_pointer(arr: List[int], target: int) -> List[int]:
         elif sum < target:
             start += 1
     return []
+
 
 # time complexity O(nlogn)
 # space complexity O(1)
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
 # more efficient way
 
-#Todo
+# Todo
 # take a hash(dictionary) in python
 # take a for loop and enumerate it within the array
 # remaining = target - value and check if the value is in the hash dictionary
@@ -99,7 +99,6 @@ if __name__ == '__main__':
 # else push the value in the dictionary
 
 def two_sum(arr: List[int], target: int) -> List[int]:
-
     values = {}
 
     for i, num in enumerate(arr):
@@ -110,9 +109,9 @@ def two_sum(arr: List[int], target: int) -> List[int]:
             values[num] = i
     return []
 
+
 # time complexity O(n)
 # space complexity O(n)
-
 
 if __name__ == '__main__':
     arr, target = [1, 4, 6, 7], 13
@@ -132,9 +131,3 @@ if __name__ == '__main__':
     expected_result = []
     assert expected_result == func_call, func_call
     print(func_call)
-
-
-
-
-
-
