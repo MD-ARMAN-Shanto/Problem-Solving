@@ -59,3 +59,42 @@ if __name__ == '__main__':
 
 print("--- %s miliseconds ---" % ((time.time() - start_time) * 1000))
 
+# another approach to solve fibonacci_series in a recursive process
+# in recursive way the time complexity of fibonacci_series will be O(2^n) and space complexity will be O(n)
+
+
+def fibonacci_recursive(n: int) -> int:
+
+    if n <= 1:
+        return n
+
+    return (fibonacci_recursive(n-1) + fibonacci_recursive(n-2))
+
+
+if __name__ == '__main__':
+    number = 3
+    function__call = fibonacci_recursive(number)
+    expected_result = 2
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = -5
+    function__call = fibonacci_recursive(number)
+    expected_result = -5
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = 10
+    function__call = fibonacci_recursive(number)
+    expected_result = 55
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = 33
+    function__call = fibonacci_recursive(number)
+    expected_result = 3524578
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+print("--- %s miliseconds ---" % ((time.time() - start_time) * 1000))
+
