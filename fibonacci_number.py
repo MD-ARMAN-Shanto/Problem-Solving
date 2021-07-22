@@ -5,6 +5,9 @@
 # we will try to solve it in a O(n) time complexity with O(1) space complexity
 
 import time
+from typing import List
+from functools import lru_cache
+
 start_time = time.time()
 
 
@@ -92,6 +95,47 @@ if __name__ == '__main__':
 
     number = 33
     function__call = fibonacci_recursive(number)
+    expected_result = 3524578
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+print("--- %s miliseconds ---" % ((time.time() - start_time) * 1000))
+
+
+# another solution for fibonacci series is recursive with memoization
+# fibonacci with memoization is help to reduce the time complexity of the program
+# time complexity of fibonacci with memoization will be O(n^2)
+
+
+@lru_cache
+def fibonacci_recursive_memoization(n: int) -> int:
+    if n <= 1:
+        return n
+    else:
+        return fibonacci_recursive_memoization(n-1) + fibonacci_recursive_memoization(n-2)
+
+
+if __name__ == '__main__':
+    number = 3
+    function__call = fibonacci_recursive_memoization(number, )
+    expected_result = 2
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = -5
+    function__call = fibonacci_recursive_memoization(number)
+    expected_result = -5
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = 10
+    function__call = fibonacci_recursive_memoization(number)
+    expected_result = 55
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = 33
+    function__call = fibonacci_recursive_memoization(number)
     expected_result = 3524578
     assert expected_result == function__call, function__call
     print(function__call)
