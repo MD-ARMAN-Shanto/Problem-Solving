@@ -140,5 +140,57 @@ if __name__ == '__main__':
     assert expected_result == function__call, function__call
     print(function__call)
 
+
+# with helper memoization
+
+def helper(n: int, memo) -> int:
+
+    if n <= 1:
+        return n
+
+    if n == 0 or n == 1:
+        return n
+    if memo[n]:
+        return memo[n]
+    else:
+        memo[n] = helper(n-1, memo) + helper(n-2, memo)
+        return memo[n]
+
+
+def fibonacci_recursive_memoization(n: int) -> int:
+    memo = [None] * (n + 1)
+    return helper(n, memo)
+
+
+if __name__ == '__main__':
+    number = 3
+    function__call = fibonacci_recursive_memoization(number, )
+    expected_result = 2
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = -5
+    function__call = fibonacci_recursive_memoization(number)
+    expected_result = -5
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = 10
+    function__call = fibonacci_recursive_memoization(number)
+    expected_result = 55
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+    number = 33
+    function__call = fibonacci_recursive_memoization(number)
+    expected_result = 3524578
+    assert expected_result == function__call, function__call
+    print(function__call)
+
+
 print("--- %s miliseconds ---" % ((time.time() - start_time) * 1000))
+
+
+
+
 
