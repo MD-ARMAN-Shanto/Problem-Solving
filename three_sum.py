@@ -4,7 +4,7 @@ Status: Accepted
 131 / 131 test cases passed.
 Runtime: 120 ms
 Memory Usage: 14.3 MB
-Problem link: https://leetcode.com/problems/3sum-closes
+Problem link: https://leetcode.com/problems/3sum-closest
 Time complexity: O(n^2)
 space complexity: O(1)
 """
