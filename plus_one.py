@@ -6,7 +6,7 @@ Runtime: 96 ms
 Memory Usage: 15.6 MB
 Problem link: https://leetcode.com/problems/plus-one/
 Time complexity: O(n)
-space complexity: O(1)
+space complexity: O(n)
 """
 from typing import List
 
@@ -36,5 +36,11 @@ if __name__ == '__main__':
     nums = [0]
     func_call = plusOne(nums)
     expected_result = [1]
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    nums = [9, 9]
+    func_call = plusOne(nums)
+    expected_result = [1, 0, 0]
     assert expected_result == func_call, func_call
     print(func_call)
