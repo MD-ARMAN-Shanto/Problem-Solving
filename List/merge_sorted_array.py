@@ -64,6 +64,15 @@ if __name__ == '__main__':
     assert expected_result == function_call, function_call
     print(function_call)
 
+    # test case 4
+    nums1 = []
+    nums2 = []
+    m, n = 0, 0
+    function_call = merge(nums1=nums1, m=m, nums2=nums2, n=n)
+    expected_result = []
+    assert expected_result == function_call, function_call
+    print(function_call)
+
 
 
 
