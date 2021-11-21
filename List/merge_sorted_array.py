@@ -26,14 +26,17 @@ def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> List[int]:
 
     return nums1
 
-#         nums3 = nums1[:m]
-#         nums4 = nums2[:n]
-
-#         res = nums3+nums4
-#         res.sort()
-
-#         for i in range(len(res)):
-#             nums1[i] = res[i]
+    # 2nd way to solve the problem
+    # nums3 = nums1[:m]
+    # nums4 = nums2[:n]
+    #
+    # res = nums3+nums4
+    # res.sort()
+    #
+    # for i in range(len(res)):
+    #     nums1[i] = res[i]
+    #
+    # return nums1
 
 
 if __name__ == '__main__':
