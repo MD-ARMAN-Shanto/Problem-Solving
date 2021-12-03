@@ -7,14 +7,13 @@ then join the list to make it str again
 """
 
 
+def truncate_sentence(s: str, k:int) -> any:
 
-def truncate_sentence(s: str, k:int) -> str:
+    res = s.split(' ')[:k]
+    return ' '.join(res)
 
-    # res = s.split(' ')[:k]
-    # return ' '.join(res)
-    #
     # or
-    return ' '.split(list(s.split(' ')[:k]))
+    # return ' '.split(list(s.split(' ')[:k]))
 
 
 if __name__ == '__main__':
@@ -22,4 +21,5 @@ if __name__ == '__main__':
     k = 3
     fc = truncate_sentence(s, k)
     expect_result = 'ami tomake bhalo'
+    print(fc)
 
