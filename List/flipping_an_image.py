@@ -23,3 +23,23 @@ def flipAndInvertImage(images: List[List[int]]) -> List[List[int]]:
     return result
 
 
+if __name__ == '__main__':
+    li = [[1,1,0],[1,0,1],[0,0,0]]
+    fc = flipAndInvertImage(li)
+    expected_result = [[1,0,0],[0,1,0],[1,1,1]]
+    assert expected_result == fc, fc
+    print(fc)
+
+    li = [[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]]
+    fc = flipAndInvertImage(li)
+    expected_result = [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+    assert expected_result == fc, fc
+    print(fc)
+
+    li = []
+    fc = flipAndInvertImage(li)
+    expected_result = []
+    assert expected_result == fc, fc
+    print(fc)
+
+
