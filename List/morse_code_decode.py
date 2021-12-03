@@ -32,3 +32,15 @@ if __name__ == '__main__':
     expected_result = 2
     assert expected_result == fc, fc
     print(fc)
+
+    li = ["a"]
+    fc = uniqueMorseRepresentations(li)
+    expected_result = 1
+    assert expected_result == fc, fc
+    print(fc)
+
+    li = []
+    fc = uniqueMorseRepresentations(li)
+    expected_result = 0
+    assert expected_result == fc, fc
+    print(fc)
