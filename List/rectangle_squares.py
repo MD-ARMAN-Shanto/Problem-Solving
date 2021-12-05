@@ -19,6 +19,8 @@ Input: rectangles = [[2,3],[3,7],[4,3],[3,7]]
 Output: 3
 
 """
+
+
 from typing import List
 
 
@@ -47,4 +49,4 @@ if __name__ == '__main__':
     assert expected_result == func_call, func_call
     print(func_call)
 
-# programmed by Md. Arman Hossain
+
