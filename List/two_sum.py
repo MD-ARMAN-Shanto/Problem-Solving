@@ -49,44 +49,44 @@ if __name__ == '__main__':
 # step 4: if arr[start] + arr[end] == target, return value
 # step 5: if sum > target then end -+ 1 else sum < target then  start +=1
 
-def two_sum_pointer(arr: List[int], target: int) -> List[int]:
-    arr.sort()  # O(nlogn)
-    start = 0
-    end = len(arr) - 1
-
-    while start < end:  # O(n)
-        sum: int = arr[start] + arr[end]
-        if sum == target:
-            return [arr[start], arr[end]]
-
-        if sum > target:
-            end -= 1
-        elif sum < target:
-            start += 1
-    return []
-
-
-# time complexity O(nlogn)
-# space complexity O(1)
-
-if __name__ == '__main__':
-    arr, target = [1, 4, 6, 7], 13
-    func_call = two_sum_pointer(arr, target)
-    expected_result = [6, 7]
-    assert expected_result == func_call, func_call
-    print(func_call)
-
-    arr, target = [4, 6, 7, -4], 0
-    func_call = two_sum_pointer(arr, target)
-    expected_result = [-4, 4]
-    assert expected_result == func_call, func_call
-    print(func_call)
-
-    arr, target = [1, 4, 4, 3], 10
-    func_call = two_sum_pointer(arr, target)
-    expected_result = []
-    assert expected_result == func_call, func_call
-    print(func_call)
+# def two_sum_pointer(arr: List[int], target: int) -> List[int]:
+#     arr.sort()  # O(nlogn)
+#     start = 0
+#     end = len(arr) - 1
+#
+#     while start < end:  # O(n)
+#         sum: int = arr[start] + arr[end]
+#         if sum == target:
+#             return [arr[start], arr[end]]
+#
+#         if sum > target:
+#             end -= 1
+#         elif sum < target:
+#             start += 1
+#     return []
+#
+#
+# # time complexity O(nlogn)
+# # space complexity O(1)
+#
+# if __name__ == '__main__':
+#     arr, target = [1, 4, 6, 7], 13
+#     func_call = two_sum_pointer(arr, target)
+#     expected_result = [6, 7]
+#     assert expected_result == func_call, func_call
+#     print(func_call)
+#
+#     arr, target = [4, 6, 7, -4], 0
+#     func_call = two_sum_pointer(arr, target)
+#     expected_result = [-4, 4]
+#     assert expected_result == func_call, func_call
+#     print(func_call)
+#
+#     arr, target = [1, 4, 4, 3], 10
+#     func_call = two_sum_pointer(arr, target)
+#     expected_result = []
+#     assert expected_result == func_call, func_call
+#     print(func_call)
 
 
 # more efficient way
