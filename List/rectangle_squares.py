@@ -37,14 +37,16 @@ def countGoodRectangles(rectangles: List[List[int]]) -> int:
 
 
 if __name__ == '__main__':
-    nums = [[5,8],[3,9],[5,12],[16,5]]
+    nums = [[5, 8], [3, 9], [5, 12], [16, 5]]
     func_call = countGoodRectangles(nums)
     expected_result = 3
     assert expected_result == func_call, func_call
     print(func_call)
 
-    nums = [[2,3],[3,7],[4,3],[3,7]]
+    nums = [[2, 3], [3, 7], [4, 3], [3, 7]]
     func_call = countGoodRectangles(nums)
     expected_result = 3
     assert expected_result == func_call, func_call
     print(func_call)
+
+# programmed by Md. Arman Hossain
