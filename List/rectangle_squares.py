@@ -36,7 +36,6 @@ def countGoodRectangles(rectangles: List[List[int]]) -> int:
     return res.count(max_value)
 
 
-
 if __name__ == '__main__':
     nums = [[5,8],[3,9],[5,12],[16,5]]
     func_call = countGoodRectangles(nums)
