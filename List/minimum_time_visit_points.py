@@ -24,6 +24,8 @@ Output: 5
 """
 from typing import List
 
+import problem as problem
+
 
 def minTimeToVisitAllPoints(points: List[List[int]]) -> int:
     total_time = 0
