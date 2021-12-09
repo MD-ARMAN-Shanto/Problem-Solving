@@ -61,3 +61,14 @@ if __name__ == '__main__':
     assert expected_result == fc, fc
     print(fc)
 
+    mat = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
+    fc = matrixDiagonalSum(mat)
+    expected_result = 8
+    assert expected_result == fc, fc
+    print(fc)
+
+    mat = [[5]]
+    fc = matrixDiagonalSum(mat)
+    expected_result = 5
+    assert expected_result == fc, fc
+    print(fc)
