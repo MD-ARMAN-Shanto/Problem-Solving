@@ -32,17 +32,26 @@ def matrixDiagonalSum(mat: List[List[int]]) -> int:
     secondary_diagonal = 0
 
     # first approach, time complexity O(n^2)
+    # for index in range(len(mat)):
+    #     for element_position in range(len(mat[index])):
+    #         if index == element_position:
+    #             primary_diagonal += mat[index][element_position]
+    #
+    #         if index + element_position == len(mat) - 1:
+    #             if index != element_position:
+    #                 secondary_diagonal += mat[index][element_position]
+    # return primary_diagonal+secondary_diagonal
+
+    # second approach, time complexity O(n^2)
+    n = len(mat)
+
     for index in range(len(mat)):
-        for element_position in range(len(mat[index])):
-            if index == element_position:
-                primary_diagonal += mat[index][element_position]
+        primary_diagonal += mat[index][index]
 
-            if index + element_position == len(mat) - 1:
-                if index != element_position:
-                    secondary_diagonal += mat[index][element_position]
-    return primary_diagonal+secondary_diagonal
+        if index + index != n - 1:
+            secondary_diagonal += mat[index][n - index - 1]
 
-
+    return primary_diagonal +secondary_diagonal
 
 
 if __name__ == '__main__':
