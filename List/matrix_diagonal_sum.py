@@ -51,7 +51,7 @@ def matrixDiagonalSum(mat: List[List[int]]) -> int:
         if index + index != n - 1:
             secondary_diagonal += mat[index][n - index - 1]
 
-    return primary_diagonal +secondary_diagonal
+    return primary_diagonal + secondary_diagonal
 
 
 if __name__ == '__main__':
