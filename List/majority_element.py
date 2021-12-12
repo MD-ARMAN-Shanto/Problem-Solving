@@ -16,7 +16,6 @@ from typing import List
 
 
 def majorityElement(nums: List[int]) -> int:
-
     res = {}
 
     for num in range(len(nums)):
@@ -26,3 +25,17 @@ def majorityElement(nums: List[int]) -> int:
             res[nums[num]] += 1
 
     return max(res, key=res.get)
+
+
+if __name__ == '__main__':
+    nums = [3, 2, 3]
+    fc = majorityElement(nums)
+    expected_result = 3
+    assert expected_result == fc, fc
+    print(fc)
+
+    nums = [2, 2, 1, 1, 1, 2, 2]
+    fc = majorityElement(nums)
+    expected_result = 2
+    assert expected_result == fc, fc
+    print(fc)
