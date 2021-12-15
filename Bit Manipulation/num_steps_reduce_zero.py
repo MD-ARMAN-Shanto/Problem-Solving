@@ -57,3 +57,15 @@ if __name__ == "__main__":
     assert expected_result == func_call, func_call
     print(func_call)
 
+    num = 123
+    func_call = numberOfSteps(num)
+    expected_result = 12
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    num = 8
+    func_call = numberOfSteps(num)
+    expected_result = 4
+    assert expected_result == func_call, func_call
+    print(func_call)
+
