@@ -37,3 +37,9 @@ if __name__ == '__main__':
     assert expected_result == func_call, func_call
     print(func_call)
 
+    encoded, first = [6, 2, 7, 3], 4
+    func_call = decode(encoded, first)
+    expected_result = [4, 2, 0, 7, 4]
+    assert expected_result == func_call, func_call
+    print(func_call)
+
