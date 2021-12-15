@@ -47,3 +47,21 @@ if __name__ == "__main__":
     expected_result = 8
     assert expected_result == func_call, func_call
     print(func_call)
+
+    n, start = 1, 7
+    func_call = xorOperation(n, start)
+    expected_result = 7
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    n, start = 10, 5
+    func_call = xorOperation(n, start)
+    expected_result = 2
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    n, start = 4, 3
+    func_call = xorOperation(n, start)
+    expected_result = 8
+    assert expected_result == func_call, func_call
+    print(func_call)
