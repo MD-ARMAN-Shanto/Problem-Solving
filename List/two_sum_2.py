@@ -52,3 +52,23 @@ def twoSum(numbers: List[int], target: int) -> List[int]:
 
     return []
 
+
+if __name__ == '__main__':
+    arr, target = [1, 4, 6, 7], 13
+    func_call = twoSum(arr, target)
+    expected_result = [3, 4]
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    arr, target = [4, 6, 7, -4], 0
+    func_call = twoSum(arr, target)
+    expected_result = [1, 4]
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    arr, target = [1, 4, 4, 3], 10
+    func_call = twoSum(arr, target)
+    expected_result = []
+    assert expected_result == func_call, func_call
+    print(func_call)
+
