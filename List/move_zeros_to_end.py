@@ -15,7 +15,7 @@ Output: [0]
 from typing import List
 
 
-def moveZeroes(nums: List[int]) -> None:
+def moveZeroes(nums: List[int]) -> list[int]:
     """
     Do not return anything, modify nums in-place instead.
     """
@@ -29,3 +29,17 @@ def moveZeroes(nums: List[int]) -> None:
             i += 1
 
     return nums
+
+
+if __name__ == '__main__':
+    nums = [0, 1, 0, 3, 12]
+    func_call = moveZeroes(nums)
+    expected_result = [1, 3, 12, 0, 0]
+    assert expected_result == func_call, func_call
+    print(func_call)
+
+    nums = [0, 1, 0, 3, 12, 0, 9, 34, 4, 0]
+    func_call = moveZeroes(nums)
+    expected_result = [1, 3, 12, 9, 34, 4, 0, 0, 0, 0]
+    assert expected_result == func_call, func_call
+    print(func_call)
