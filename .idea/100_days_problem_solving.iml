@@ -2,9 +2,23 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.idea" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.idea/inspectionProfiles" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.idea/sonarlint" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bit Manipulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Linked_List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/String" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/array-partition-i" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/count-negative-numbers-in-a-sorted-matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/di-string-match" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/final-prices-with-a-special-discount-in-a-shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/n-repeated-element-in-size-2n-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sum-of-unique-elements" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (Problem-Solving)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
