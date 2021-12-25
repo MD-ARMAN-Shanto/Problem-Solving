@@ -9,11 +9,10 @@ class Solution:
                 dPrice = prices[discount]
                 
                 if dPrice <= iPrice:
-                    diff = iPrice - dPrice
-                    res.append(diff)
+                    res.append(iPrice - dPrice)
                     break
             else:
-                res.append(prices[price])
+                res.append(iPrice)
         
         return res
                 
