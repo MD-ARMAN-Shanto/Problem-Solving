@@ -16,6 +16,24 @@
       <sourceFolder url="file://$MODULE_DIR$/final-prices-with-a-special-discount-in-a-shop" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/n-repeated-element-in-size-2n-array" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sum-of-unique-elements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cells-with-odd-values-in-a-matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/create-target-array-in-the-given-order" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/decode-xored-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/decompress-run-length-encoded-list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/find-greatest-common-divisor-of-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/find-the-highest-altitude" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/how-many-numbers-are-smaller-than-the-current-number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kids-with-the-greatest-number-of-candies" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/matrix-diagonal-sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/maximum-product-of-two-elements-in-an-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/number-of-good-pairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/number-of-rectangles-that-can-form-the-largest-square" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/number-of-students-doing-homework-at-a-given-time" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/replace-elements-with-greatest-element-on-right-side" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/richest-customer-wealth" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shuffle-string" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sort-array-by-parity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sum-of-all-subset-xor-totals" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (Problem-Solving)" jdkType="Python SDK" />
