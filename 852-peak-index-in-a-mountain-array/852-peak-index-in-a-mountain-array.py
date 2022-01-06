@@ -1,7 +1,8 @@
 class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
         
-        
+        # 1st approch
+        # complexity O(n)
         for num in range(1, len(arr)):
             prev = arr[num-1]
             current_num = arr[num]
