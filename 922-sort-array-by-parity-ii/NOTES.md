@@ -4,7 +4,7 @@
 4. loop thru the even array
 5. append even and odd number to the res list
 6. return the res list
-​
+---------
 2nd approch:
 1. take j =1
 2. loop the nums value from (0, len(nums), 2)
