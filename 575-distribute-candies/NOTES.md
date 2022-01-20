@@ -1,0 +1,1 @@
+1. return the length of set of candy type because set give the unique value of list
