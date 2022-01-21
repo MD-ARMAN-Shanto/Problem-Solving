@@ -16,11 +16,15 @@ class Solution:
 #                 res.append(i)
 #             else:
 
+        unique_candies = len(set(candyType))
         l = len(candyType) // 2
     
-        res = list(set(candyType))
+        return min(unique_candies, l)
         
-        return (len(res[:l]))
+    
+#         res = list(set(candyType))
+        
+#         return (len(res[:l]))
                 
                 
             
