@@ -1,0 +1,1 @@
+fizz buzz is an interesting problem to find out whether it is divisible by 3 and 5 or only 5 or only 3 neither append the iterate value one after another
