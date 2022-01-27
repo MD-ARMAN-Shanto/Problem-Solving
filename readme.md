@@ -1,4 +1,4 @@
-This is a leetcode problem solve project repo
+This is a leetcode problem solve project repo.                                                                                        
 This project has been created for uploading all the DSA problems I have solved so far. 
 
 DS till now used:
