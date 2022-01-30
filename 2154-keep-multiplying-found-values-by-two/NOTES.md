@@ -11,3 +11,11 @@ approch 1:
 4. start from the beginning
 5. else i +=1
 6. return original
+​
+3rd approach using set
+1. list turn into set
+2. check value remain in set
+3. if remain multiply the value
+4. return value
+​
+​
