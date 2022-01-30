@@ -11,6 +11,15 @@ class Solution:
         return index if s_l * 2 <= f_l else -1
         
         
+        m = max(nums)
+        index = nums.index(m)
+        
+        for num in nums:
+            if not m >= 2 * num and m!=num:
+                return -1
+        else:
+            return index
+        
         
         
                 
