@@ -1,2 +1,5 @@
 # untraced file
 venv
+.idea
+.gitignore
+__pycache__/
