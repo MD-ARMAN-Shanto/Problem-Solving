@@ -6,11 +6,11 @@ class Solution:
         for op in ops:
             if op not in {'C', 'D', '+'}:
                 record.append(int(op))
-            if op == "C":
+            elif op == "C":
                 record.pop()
-            if op == "D":
+            elif op == "D":
                 record.append(record[-1] * 2)
-            if op == "+":
+            else:
                 record.append(sum(record[-2:]))
             
         return sum(record)
