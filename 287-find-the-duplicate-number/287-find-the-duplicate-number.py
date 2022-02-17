@@ -1,14 +1,22 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
+
+        tortoise = hare = nums[0]
         
-        d = {}
+        while True:
+            tortoise = nums[tortoise]
+            hare = nums[nums[hare]]
+            
+            if tortoise == hare:
+                break
         
-        for num in nums:
-            if num not in d:
-                d[num] = 1
-            else:
-                d[num] += 1
+        # entrance of loop of the cycle
+        tortoise = nums[0]
+        
+        while tortoise != hare:
+            tortoise = nums[tortoise]
+            hare = nums[hare]
                 
-        for i, v in d.items():
-            if v > 1:
-                return i
+        return hare
+            
+                
