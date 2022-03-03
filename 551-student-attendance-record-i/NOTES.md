@@ -1,0 +1,1 @@
+count the absent and late date accroding to the logic
