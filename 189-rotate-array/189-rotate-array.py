@@ -3,14 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        
-#         for num in range(k):
-            
-#             res = nums.pop(len(nums)-1)
-            
-#             nums.insert(0, res)
-            
-#         return nums
+
 
         k = k % len(nums)
     
