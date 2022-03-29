@@ -18,5 +18,23 @@ class Solution:
             hare = nums[hare]
                 
         return hare
+    
+    # 2nd approch using set
+    seen = set()
+        
+    for num in nums:
+        if num in seen:
+            return num
+        seen.add(num)
+        
+    # 3rd approch using hashmap
+    d = {}
+        
+    for num in nums:
+        if num not in d:
+            d[num] = 1
+        else:
+            return num
+    
             
                 
