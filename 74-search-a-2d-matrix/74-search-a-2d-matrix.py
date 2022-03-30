@@ -3,15 +3,15 @@ class Solution:
         
         for i in range(len(matrix)):
             l = 0
-            h = len(matrix[i])
+            r = len(matrix[i])
 
-            while l < h:
-                mid = (l+h)//2
+            while l < r:
+                mid = (l+r)//2
 
                 if matrix[i][mid] == target:
                     return True
                 elif matrix[i][mid] > target:
-                    h = mid
+                    r = mid
                 else:
                     l = mid+1
                         
