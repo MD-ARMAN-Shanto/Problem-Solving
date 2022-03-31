@@ -4,14 +4,11 @@ class Solution:
         d = {}
         
         for num in max(nums1, nums2):
-            if num not in d:
-                d[num] = 1
-            else:
-                d[num] += 1
+            d[num] = d.get(num, 0) + 1
             
         res = []
         for num in min(nums1, nums2):
-            if num in d and d[num] > 0:
+            if num in d and d.get(num, 0) > 0:
                 res.append(num)
                 d[num] -= 1
                 
