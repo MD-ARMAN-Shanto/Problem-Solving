@@ -4,7 +4,7 @@ class Solution:
         s = list(s)
         l, h =0, len(s) - 1
         
-        v = set(list("aeiouAEIOU"))
+        v = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
         
         while l < h:
             if s[l] not in v:
