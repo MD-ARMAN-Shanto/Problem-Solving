@@ -18,7 +18,6 @@ class Solution:
         li = list(s)
         
         for i in range(len(li)):
-            print(li[i])
             if li[i] == first_value:
                 return i
                 break
