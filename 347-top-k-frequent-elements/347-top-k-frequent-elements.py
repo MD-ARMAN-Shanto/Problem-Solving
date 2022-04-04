@@ -6,7 +6,7 @@ class Solution:
         
         for num in nums:
             d[num] = d.get(num, 0) + 1
-            
+        
         res = list(d.values())
         
         rev_list = sorted(res, reverse=True)[:k]
