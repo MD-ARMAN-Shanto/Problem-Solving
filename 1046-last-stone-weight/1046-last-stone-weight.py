@@ -6,7 +6,6 @@ class Solution:
         stones = [-val for val in stones]
         heapq.heapify(stones)
         
-        
         while len(stones) > 1:
             f_val = heapq.heappop(stones)
             s_val = heapq.heappop(stones)
