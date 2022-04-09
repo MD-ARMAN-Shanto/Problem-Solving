@@ -28,6 +28,6 @@ class Solution:
     if k == len(nums):
             return nums
 
-        count = Counter(nums)   
-        
-        return heapq.nlargest(k, count.keys(), key=count.get)
+    count = Counter(nums)   
+
+    return heapq.nlargest(k, count.keys(), key=count.get)
