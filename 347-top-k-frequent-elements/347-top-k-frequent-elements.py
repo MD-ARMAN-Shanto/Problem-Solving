@@ -22,3 +22,12 @@ class Solution:
                 del d[list(d.keys())[position]]
     
         return final_result
+    
+    # 2nd approch time complexity O(Nlogk)
+    
+    if k == len(nums):
+            return nums
+
+        count = Counter(nums)   
+        
+        return heapq.nlargest(k, count.keys(), key=count.get)
