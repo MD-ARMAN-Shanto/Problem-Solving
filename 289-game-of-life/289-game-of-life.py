@@ -1,5 +1,14 @@
 class Solution:
     def gameOfLife(self, board: List[List[int]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        
+        # original | new | state
+        #    0     |  0  |   0
+        #    1     |  0  |   1
+        #    0     |  1  |   2
+        #    1     |  1  |   3
         
         Rows, Cols = len(board), len(board[0])
         
