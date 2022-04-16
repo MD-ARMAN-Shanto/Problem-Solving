@@ -12,9 +12,9 @@ class Solution:
                     matrix[r][c] in cols[c]):
                     
                     return False
-                else:
-                    rows[r].add(matrix[r][c])
-                    cols[c].add(matrix[r][c])
+                
+                rows[r].add(matrix[r][c])
+                cols[c].add(matrix[r][c])
                     
         return True
         
