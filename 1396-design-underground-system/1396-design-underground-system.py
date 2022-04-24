@@ -5,7 +5,7 @@ class UndergroundSystem:
         
         self.i = defaultdict(tuple)
         
-        # (start, end): timeend - timestart
+        # (start, end): starttime - endtime
         self.out = defaultdict(list)
         
         
