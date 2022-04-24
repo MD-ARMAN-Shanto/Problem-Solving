@@ -9,7 +9,6 @@ class UndergroundSystem:
         self.out = defaultdict(list)
         
         
-
     def checkIn(self, id: int, stationName: str, t: int) -> None:
         self.i[id] = (t, stationName)
         
