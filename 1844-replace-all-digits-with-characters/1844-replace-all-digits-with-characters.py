@@ -1,7 +1,5 @@
 class Solution:
     def replaceDigits(self, s: str) -> str:
-        
-        ascii_a = ord(s[0])
         res = []
         
         for i in range(len(s)):
