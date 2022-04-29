@@ -1,15 +1,14 @@
 class Solution:
     def secondHighest(self, s: str) -> int:
-        li = list(s)
-        s = list()
+        li = list()
         
-        for w in li:
-            if w.isdigit():
-                if w in s:
+        for w in range(len(s)):
+            if s[w].isdigit():
+                if s[w] in li:
                     continue
-                s.append(w)
-        res = sorted(s, reverse=True)
-        return int(res[1]) if len(s) > 1 else -1
+                li.append(s[w])
+        res = sorted(li, reverse=True)
+        return int(res[1]) if len(li) > 1 else -1
                 
         
                 
