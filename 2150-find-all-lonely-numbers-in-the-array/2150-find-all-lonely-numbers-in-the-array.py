@@ -2,23 +2,19 @@ class Solution:
     def findLonely(self, nums: List[int]) -> List[int]:
         
         d = {}
-        o = set(nums)
-        s = set()
-        res = []
         
-        for ch in nums:
-            d[ch] = d.get(ch, 0) + 1
-
-        for i, v in d.items():
-            if v < 2:
-                s.add(i)
-
-        for n in s:
-            if n-1 in o or n+1 in o:
-                continue
-            res.append(n)
+        for n in nums:
+            d[n] = d.get(n, 0) + 1 
             
-        return res
+        answer = []
+        
+        for i in range(len(nums)):
+            if (nums[i]-1) not in d:
+                if (nums[i]+1) not in d:
+                    if d[nums[i]] == 1:
+                        answer.append(nums[i])
+                        
+        return answer
                 
                 
                 
