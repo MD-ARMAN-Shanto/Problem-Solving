@@ -16,7 +16,7 @@ class Solution:
                 j += 1
                         
         # now compare with the original array and rank them using hashmap
-        # t_c : n
+        # t_c, s_c : n, n
         for i in range(len(arr)):
             arr[i] = d.get(arr[i])
                 
