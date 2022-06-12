@@ -28,5 +28,3 @@ class Solution:
             
         return num + d[s[len(s)-1]]
 
-
-
