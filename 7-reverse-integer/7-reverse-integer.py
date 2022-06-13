@@ -10,4 +10,3 @@ class Solution:
         if rev > 2147483648 or rev < -2147483648:
             return 0
         return rev
-        
