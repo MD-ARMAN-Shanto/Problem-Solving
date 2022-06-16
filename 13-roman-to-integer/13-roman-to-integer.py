@@ -27,7 +27,3 @@ class Solution:
                 num += val
             
         return num + d[s[len(s)-1]]
-                
-            
-            
-            
