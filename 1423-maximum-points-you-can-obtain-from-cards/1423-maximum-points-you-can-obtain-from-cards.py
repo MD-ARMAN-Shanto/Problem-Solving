@@ -1,8 +1,6 @@
 class Solution:
     def maxScore(self, cp: List[int], k: int) -> int:
         
-        # find minimum value from sub array
-        
         N = len(cp)
         M = N-k
         total = sum(cp)
