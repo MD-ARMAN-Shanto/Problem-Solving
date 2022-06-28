@@ -19,7 +19,7 @@ class Solution:
                 # if referrence node
                 else:
                     previous_node.next = current_node.next
-                    current_node = previous_node.next
+                    current_node = previous_node
                     
             else:
                 previous_node = current_node
