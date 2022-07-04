@@ -11,10 +11,8 @@ class Solution:
         tmp = head
         
         while tmp:
-            
             if tmp in s:
                 return True
-            
             s.add(tmp)
             tmp = tmp.next
             
