@@ -70,3 +70,4 @@ if __name__ == '__main__':
     final_result = strStr(haystack, needle)
     assert expected_ans == final_result, final_result
     print(final_result)
+

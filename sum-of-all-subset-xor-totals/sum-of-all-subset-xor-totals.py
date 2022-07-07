@@ -15,9 +15,3 @@ class Solution:
         for num in nums:
             res |= num
         return res * int(pow(2, len(nums)-1))
-        
-                
-
-                
-            
-        
