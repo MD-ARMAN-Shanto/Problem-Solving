@@ -9,16 +9,16 @@
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 <img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" style="width: 600px; height: 287px;">
-<pre><strong>Input:</strong> height = [1,8,6,2,5,4,8,3,7]
+<pre style="position: relative;"><strong>Input:</strong> height = [1,8,6,2,5,4,8,3,7]
 <strong>Output:</strong> 49
 <strong>Explanation:</strong> The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><strong>Example 2:</strong></p>
 
-<pre><strong>Input:</strong> height = [1,1]
+<pre style="position: relative;"><strong>Input:</strong> height = [1,1]
 <strong>Output:</strong> 1
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
