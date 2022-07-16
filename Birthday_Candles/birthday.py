@@ -26,3 +26,5 @@ if __name__ == "__main__":
     output = birthday(s, d, m)
     assert expected_result == output, output
     print(output)
+
+
