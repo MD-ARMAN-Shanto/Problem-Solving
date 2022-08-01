@@ -9,7 +9,6 @@ class Solution:
             count[s[i]] = count.get(s[i], 0) + 1
             
             while (i-l+1) - max(count.values()) > k:
-                
                 count[s[l]] -= 1
                 l += 1
             
