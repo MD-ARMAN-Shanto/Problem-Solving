@@ -3,9 +3,7 @@ class Solution:
         
         count = {}
         res = 0
-        
         l = maxf = 0
-        
         
         for i in range(len(s)):
             count[s[i]] = 1 + count.get(s[i], 0)
