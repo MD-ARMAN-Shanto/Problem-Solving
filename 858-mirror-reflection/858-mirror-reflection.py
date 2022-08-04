@@ -5,7 +5,7 @@ class Solution:
         
         if (L//q)%2 == 0:
             return 2
-
+        
         return (L//p)%2
         
         
