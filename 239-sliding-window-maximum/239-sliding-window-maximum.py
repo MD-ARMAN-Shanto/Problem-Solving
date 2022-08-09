@@ -18,6 +18,7 @@ class Solution:
                     q.pop(0)
                 i += 1
                 j += 1
+
         return res
             
             
