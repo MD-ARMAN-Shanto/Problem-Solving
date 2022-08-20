@@ -1,7 +1,7 @@
 import "fmt"
 func repeatedCharacter(s string) byte {
     
-    hash := make(map[byte]bool)
+    var hash = make(map[byte]bool)
     
     for i:= 0; i <= len(s); i++ {
         if hash[s[i]] {
