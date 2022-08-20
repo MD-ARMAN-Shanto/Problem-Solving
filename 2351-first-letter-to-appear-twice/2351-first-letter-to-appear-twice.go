@@ -1,13 +1,15 @@
-class Solution:
-    def repeatedCharacter(self, s: str) -> str:
+import "fmt"
+func repeatedCharacter(s string) byte {
+    
+    hash := make(map[byte]bool)
+    
+    for i:= 0; i <= len(s); i++ {
+        if hash[s[i]] {
+            return s[i]
+        }else{
+            hash[s[i]] = true
+        }
         
-        xset = set()
-        
-        for ch in s:
-            if not ch in xset:
-                xset.add(ch)
-            else:
-                return ch
-                
-                
-                
+    }
+    return 0
+}
