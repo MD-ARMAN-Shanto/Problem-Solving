@@ -4,9 +4,10 @@ class Solution:
         xset = set()
         
         for ch in s:
-            if ch in xset:
-                return ch
-            else:
+            if not ch in xset:
                 xset.add(ch)
+            else:
+                return ch
+                
                 
                 
