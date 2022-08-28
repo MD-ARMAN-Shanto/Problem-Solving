@@ -27,8 +27,7 @@ class Solution:
         iteration = 0
         while iteration <= 30:
             iteration += 1
-            tmp_i = str(i)
-            counter_tmp = Counter(tmp_i)
+            counter_tmp = Counter(str(i))
             if counter_tmp == counter_number:
                 return True
             i *= 2
