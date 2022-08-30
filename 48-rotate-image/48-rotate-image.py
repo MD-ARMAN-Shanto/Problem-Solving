@@ -3,24 +3,13 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        
-        # first tranpose the matrix
-        # l = len(mat[0])
-        
-        for i, v in enumerate(zip(*mat)):
-            mat[i] = list(v)[::-1]
-        
-        
-#         for i in range(len(mat)):
-#             for j in range(i, len(mat)):
-#                 mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
-                
-#             mat[i] = mat[i][::-1]
-                
-        # reverse the list with half of the length
-        # for r in range(len(mat)):
-        #     for c in range(0, l//2):
-        #         mat[r][c], mat[r][l-c-1] = mat[r][l-c-1], mat[r][c]
-        
-        
-        return mat
+
+        n = len(mat[0])
+    
+        for i in range(n//2 + n%2):
+            for j in range(n//2):
+                tmp = mat[n-1-j][i] #7
+                mat[n-1-j][i] = mat[n-1-i][n-j-1]
+                mat[n-1-i][n-j-1] = mat[j][n-1-i]
+                mat[j][n-1-i] = mat[i][j]
+                mat[i][j] = tmp
