@@ -12,10 +12,12 @@ class Solution:
             for j in range(i, len(mat)):
                 mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
                 
+            mat[i] = mat[i][::-1]
+                
         # reverse the list with half of the length
-        for r in range(len(mat)):
-            for c in range(0, l//2):
-                mat[r][c], mat[r][l-c-1] = mat[r][l-c-1], mat[r][c]
+        # for r in range(len(mat)):
+        #     for c in range(0, l//2):
+        #         mat[r][c], mat[r][l-c-1] = mat[r][l-c-1], mat[r][c]
         
         
         return mat
