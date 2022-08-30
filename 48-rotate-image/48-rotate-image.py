@@ -5,14 +5,17 @@ class Solution:
         """
         
         # first tranpose the matrix
-        l = len(mat[0])
+        # l = len(mat[0])
+        
+        for i, v in enumerate(zip(*mat)):
+            mat[i] = list(v)[::-1]
         
         
-        for i in range(len(mat)):
-            for j in range(i, len(mat)):
-                mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+#         for i in range(len(mat)):
+#             for j in range(i, len(mat)):
+#                 mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
                 
-            mat[i] = mat[i][::-1]
+#             mat[i] = mat[i][::-1]
                 
         # reverse the list with half of the length
         # for r in range(len(mat)):
