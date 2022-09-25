@@ -3,7 +3,6 @@ class Solution:
         
         result = 0
         
-        # left to right iteration
         for i in range(len(nums1)):
             count = 0
             
@@ -15,7 +14,6 @@ class Solution:
                     
             result = max(result, count)
             
-        # right to left
         for i in range(len(nums2)):
             count = 0
             
