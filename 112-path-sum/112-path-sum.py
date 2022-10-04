@@ -10,7 +10,7 @@ class Solution:
         if not root:
             return False
         
-        if root.val == targetSum and not root.left and not root.right:
+        elif root.val == targetSum and not root.left and not root.right:
             return True
         else:
             return self.hasPathSum(root.left, targetSum-root.val) or \
