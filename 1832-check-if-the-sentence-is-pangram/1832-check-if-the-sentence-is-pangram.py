@@ -1,20 +1,13 @@
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
         
-#         ascii_val = [_ for _ in range(97, 123)]
-#         sentence_ascii = []
+        s = set()
         
-#         for ch in sentence:
-#             sentence_ascii.append(ord(ch))
-            
-#         if not len(ascii_val) == len(set(sentence_ascii)):
-#             return False
+        for ch in sentence:
+            if ch in s:
+                continue
+            else:
+                s.add(ch)
+                
+        return True if len(s) == 26 else False
         
-#         return True
-        
-        
-        set_val = set(sentence)
-        
-        if len(set_val) == 26:
-            return True
-        return False
