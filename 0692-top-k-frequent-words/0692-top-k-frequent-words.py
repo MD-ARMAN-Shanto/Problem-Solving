@@ -9,7 +9,7 @@ class Solution:
         res = []
         while k > 0:
             max_key = max(sorted(d), key=d.get)
-            del d[max_key]
+            d.pop(max_key)
             res.append(max_key)
             k -= 1
             
