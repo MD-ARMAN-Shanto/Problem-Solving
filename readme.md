@@ -14,3 +14,5 @@ This project has been created for uploading all the DSA problems I have solved s
 4. Binary Search
 5. Boyer Moore Voting algorithm
 6. Monotonic stack approach
+6. Sliding window algorithm
+7. DFS(Depth First Search) algorithm
