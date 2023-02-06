@@ -6,9 +6,9 @@ class Solution:
         
         result = []
         
-        for i, j in zip(x,y):
-            result.append(i)
-            result.append(j)
+        for i in range(n):
+            result.append(x[i])
+            result.append(y[i])
             
         return result
             
