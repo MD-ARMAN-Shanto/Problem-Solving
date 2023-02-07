@@ -12,7 +12,7 @@ class Solution:
             while len(baskets) == 3:
                 baskets[fruits[left]] -= 1
                 if baskets[fruits[left]] == 0:
-                    baskets.pop(fruits[left])
+                    del baskets[fruits[left]]
                     
                 left += 1
                 
