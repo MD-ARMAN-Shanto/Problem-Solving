@@ -1,8 +1,5 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
         
-        x = int(a, 2)
-        y = int(b, 2)
-        
-        return f'{x+y:b}'
+        return f'{int(a, 2)+int(b, 2):b}'
         
