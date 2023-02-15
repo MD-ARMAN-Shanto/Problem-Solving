@@ -17,3 +17,10 @@ class Solution:
 #         return result_array[::-1]
     
         return [int(x) for x in str(result+k)]
+    
+    
+    
+    
+    
+    
+    
