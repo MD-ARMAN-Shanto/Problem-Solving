@@ -10,8 +10,6 @@ class Solution:
         if root is None:
             return 0
         
-        
-        
         left_depth = self.minDepth(root.left)
         right_depth = self.minDepth(root.right)
         
