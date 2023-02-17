@@ -13,7 +13,7 @@ class Solution:
             if node:
                 inorder(node.left)
                 if self.cur:
-                    self.minimum = min(self.minimum,node.val-self.cur.val)
+                    self.minimum = min(self.minimum, node.val-self.cur.val)
                 self.cur = node
                 inorder(node.right)
         inorder(root)
