@@ -8,7 +8,6 @@ class Solution:
                 neg_count += 1
             elif num > 0:
                 pos_count += 1
-                
             max_count = max(pos_count, neg_count)
             
         return max_count
