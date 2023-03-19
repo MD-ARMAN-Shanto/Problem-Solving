@@ -12,7 +12,6 @@ class Trie:
     def insert(self, word: str) -> None:
         node = self.root
         
-        
         for char in word:
             if char in node.children:
                 node = node.children[char]
