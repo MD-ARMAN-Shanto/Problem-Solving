@@ -16,8 +16,7 @@ class ParkingSystem:
                 self.d[carType] -= 1
                 return True
         else:
-            self.d[carType] -= 1
-            return True
+            return False
 
 
 # Your ParkingSystem object will be instantiated and called as such:
