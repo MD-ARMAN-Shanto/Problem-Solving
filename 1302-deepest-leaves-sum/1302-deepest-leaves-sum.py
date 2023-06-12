@@ -20,7 +20,6 @@ class Solution:
             self.level_sum.append(val)
         
     def traverse(self, root, level):
-        
         self.addToArray(root.val, level)
         
         if root.left:
