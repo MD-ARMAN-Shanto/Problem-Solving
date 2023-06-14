@@ -20,7 +20,7 @@ class Solution:
             
         traverse(root)  
         stack.sort()
-        diff = min( stack[i] - stack[i-1] for i in range(1, len(stack) ) ) 
+        diff = min( stack[i] - stack[i-1] for i in range(1, len(stack))) 
             
         return diff
         
