@@ -28,7 +28,7 @@ class Solution:
         
         stack.sort()
         
-        min_val = 999999999
+        min_val = inf
             
         for i in range(1, len(stack)):
             val = abs(stack[i-1] - stack[i])
