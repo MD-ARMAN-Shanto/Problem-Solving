@@ -9,20 +9,13 @@ class Solution:
         
         stack = []
         
-        def append_to_stack(root):
+        def traverse(root):
             if root is None:
                 return 0
             
-            if root.val not in stack:
-                stack.append(root.val)
-                
-        def traverse(root):
-            append_to_stack(root)
-            
-            if root.left:
-                traverse(root.left)
-            if root.right:
-                traverse(root.right)
+            traverse(root.left)
+            stack.append(root.val)
+            traverse(root.right)
             
         traverse(root)
         stack.sort()
