@@ -9,6 +9,7 @@ class Solution:
         
         stack = []
         
+        # in-order traversal
         def traverse(root):
             if root is None:
                 return 0
@@ -17,9 +18,7 @@ class Solution:
             stack.append(root.val)
             traverse(root.right)
             
-        traverse(root)
-        stack.sort()
-        
+        traverse(root)        
         diff = min( stack[i] - stack[i-1] for i in range(1, len(stack) ) ) 
             
         return diff
