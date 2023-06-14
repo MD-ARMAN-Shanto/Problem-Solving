@@ -27,14 +27,9 @@ class Solution:
         traverse(root)
         stack.sort()
         
-        min_val = inf
+        diff = min( stack[i] - stack[i-1] for i in range(1, len(stack) ) ) 
             
-        for i in range(1, len(stack)):
-            val = abs(stack[i-1] - stack[i])
-            min_val = min(val, min_val)
-            
-            
-        return min_val
+        return diff
         
         
         
