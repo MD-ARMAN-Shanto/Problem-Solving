@@ -25,7 +25,6 @@ class Solution:
                 traverse(root.right)
             
         traverse(root)
-        
         stack.sort()
         
         min_val = inf
