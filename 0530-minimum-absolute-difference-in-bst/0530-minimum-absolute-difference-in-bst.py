@@ -18,7 +18,8 @@ class Solution:
             stack.append(root.val)
             traverse(root.right)
             
-        traverse(root)   
+        traverse(root)  
+        stack.sort()
         diff = min( stack[i] - stack[i-1] for i in range(1, len(stack) ) ) 
             
         return diff
