@@ -19,7 +19,8 @@ class Solution:
             traverse(root.right)
             
         traverse(root)  
-        stack.sort()
+        # print(stack)
+        # stack.sort()
         diff = min( stack[i] - stack[i-1] for i in range(1, len(stack))) 
             
         return diff
