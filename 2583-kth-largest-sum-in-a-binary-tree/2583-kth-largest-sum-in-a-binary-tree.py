@@ -37,12 +37,12 @@ class Solution:
                     
 #             sum_array[i], sum_array[min_index] = sum_array[min_index], sum_array[i]
 
-        res = sorted(sum_array, reverse=True)
+        sum_array.sort(reverse=True)
                             
-        if k > len(res):
+        if k > len(sum_array):
             return -1
         
-        return res[k-1]
+        return sum_array[k-1]
         
         
         
