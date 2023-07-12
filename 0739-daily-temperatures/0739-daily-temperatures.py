@@ -1,5 +1,6 @@
 class Solution:
     def dailyTemperatures(self, temp) -> list:
+        
         result = [0] * len(temp)
         stack = []
         
