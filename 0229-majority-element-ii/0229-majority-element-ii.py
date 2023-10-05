@@ -11,9 +11,8 @@ class Solution:
                 res[val] += 1
         
         l = []
-        
         for k, v in res.items():
-            if v >  len(nums)//3:
+            if v > len(nums)//3:
                 l.append(k)
         
         return l
